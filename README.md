@@ -23,12 +23,14 @@ select *
 from [KMS Sql Case Study]
 
 1. Which product category had the highest sales? OFFICE SUPPLIES WITH 4610 SALES
+   
 select top 1 [Product_Category],count ([Product_Category])as [Product Count]
 from [KMS Sql Case Study]
 group by Product_Category
 order by [Product Count] desc
    
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
+
 TOP 3
 select top 3 [Region],sum([sales]) as [Total Sales]
 from [KMS Sql Case Study]
